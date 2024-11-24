@@ -14,7 +14,9 @@ public class RestUtils {
 		RequestSpecification httpRequest = RestAssured.given();
 		Response response = httpRequest.request(Method.GET);
 		
-		//System.out.println(response.getStatusCode());
+		
+		System.out.println(response.getStatusCode());
+		System.out.println(response.getBody());
 		return response;
 		
 		

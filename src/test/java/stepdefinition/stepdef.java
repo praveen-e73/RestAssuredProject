@@ -64,7 +64,7 @@ public class stepdef {
 	    
 	}
 
-	@Then("the response shhould have {string}")
+	@Then("the response should have {string}")
 	public void the_response_shhould_have(String expVal) {
 		
 		if(response.getBody().asString().contains(expVal)) {
